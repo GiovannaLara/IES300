@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atualizar Cadastro Cotação</title>
+    <link rel="stylesheet" type="text/css" href="..\static\css\geral.css">
+
+</head>
+<body>
+    <img id="logo2" src= "..\static\imagem\Logo075.png" alt="Logo da marca"/>
+    
+    <div id="metade" >
+        <h1 id="tipo2">Atualizar Cadastro Cotação</h1>
+        <form name="form_atualizar_cadastro_cotacao" action="/atualizar_cadastro_cotacao.html" method="POST">            
+            <hgroup>
+                <label  id="tipo_formulario">CPF:</label>
+                <input type="text" name="cpf_atualizar_cadastro_cotacao" id="caixa" placeholder="apenas números"/>
+                <span class="alerta" id="span_cpf_atualizar_cadastro_cotacao"></span>
+            </hgroup>
+    
+            <hgroup>
+                <label  id="tipo_formulario">Seguradora:</label>
+                <input type="text" name="seguradora_atualizar_cadastro_cotacao" id="caixa" /><!--Como gera barra de opções-->
+                <span class="alerta" id="span_seguradora_atualizar_cadastro_cotacao"></span>
+            </hgroup>
+    
+            <hgroup>
+                <label name="lemail" id="tipo_formulario">Placa veículo:</label>
+                <input type="text" name="placa_atualizar_cadastro_cotacao" id="caixa" />
+                <span class="alerta" id="span_placa_atualizar_cadastro_cotacao"></span>
+            </hgroup>
+
+            <hgroup>
+                <label for="cNasc" id="tipo_formulario">Data da cotação:</label>
+                <input type="date" name="dt_cot_atualizar_cadastro_cotacao" id="caixa"/>
+                <span class="alerta" id="span_dt_cot_atualizar_cadastro_cotacao"></span>
+            </hgroup>
+       
+            <hgroup>
+                <label id="tipo_formulario">Valor:</label>
+                <input type="text" name="valor_atualizar_cadastro_cotacao" id="caixa" />
+                <span class="alerta" id="span_valor_atualizar_cadastro_cotacao"></span>
+            </hgroup>
+        </form>
+            
+            <div id="bt_vt">
+                <label id="botao1" name="label_atualizar_cadastro_cotacao">Atualizar</label>
+                
+                <a href="cotações.html">
+                    <img id="voltar2"  src= "..\static\imagem\circle-arrow-right050.png" alt="Voltar"/>
+                </a>
+                
+            </div>
+    </div>
+
+    <script src="../static/script/atualizar_cadastro_cotação.js"></script>
+
+</body>
+</html>
