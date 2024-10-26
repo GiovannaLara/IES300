@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Seguradora</title>
+    <link rel="stylesheet" type="text/css" href="..\static\css\geral.css">
+
+</head>
+<body>
+    <img id="logo2" src= "..\static\imagem\Logo075.png" alt="Logo da marca"/>
+ 
+    <div id="metade">
+        <h1 id="tipo2">Visualizar Seguradora</h1>
+               
+        <hgroup>
+            <label  id="tipo_formulario">Nome:</label>
+            <textarea name="nome_visualizar_seguradora" readonly></textarea>
+              
+        </hgroup>
+
+        <hgroup>
+            <label  id="tipo_formulario">CNPJ:</label>
+            <textarea name="cnpj_visualizar_seguradora" readonly></textarea> 
+        </hgroup>
+
+        <hgroup>
+            <label  id="tipo_formulario">Endereço:</label>
+            <textarea name="endereco_visualizar_seguradora" readonly></textarea>    
+        </hgroup>
+
+        <hgroup>
+            <label  id="tipo_formulario">Telefone:</label>
+            <textarea name="tel_visualizar_seguradora" readonly></textarea>
+              
+        </hgroup>
+
+        <hgroup>
+            <label  id="tipo_formulario">E-mail:</label>
+            <textarea name="email_visualizar_seguradora" readonly></textarea> 
+        </hgroup>
+
+        <div id="bt_vt">
+            <a href="atualizar_cadastro_seguradora.html">
+                <label id="botao1">Alterar</label>
+            </a>
+            <label id="botao1" onclick="excluirSeguradora()"> Excluir </label>
+            <script>
+                function excluirSeguradora(){
+                var resultado = confirm("Deseja excluir essa seguradora?");
+                    if (resultado == true) {
+                        alert("A seguradora será excluído do registro!");    
+                    } 
+                }
+            </script>
+            <a href="consultar_seguradora.html">
+                <img id="voltar2" src= "..\static\imagem\circle-arrow-right050.png" alt="Voltar"/>
+            </a>
+        </div>
+    </div>
+</body>
+</html>

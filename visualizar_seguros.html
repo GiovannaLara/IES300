@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Seguro</title>
+    <link rel="stylesheet" type="text/css" href="..\static\css\geral.css">
+
+</head>
+<body>
+    <img id="logo2" src= "..\static\imagem\Logo075.png" alt="Logo da marca"/>
+ 
+    <div id="metade">
+        <h1 id="tipo2">Visualizar Seguro</h1>
+               
+        <hgroup>
+            <label  id="tipo_formulario">CPF do segurado:</label>
+            <textarea name="cpf_visualizar_seguros" readonly></textarea>
+              
+        </hgroup>
+
+        <hgroup>
+            <label  id="tipo_formulario">Placa do veículo:</label>
+            <textarea name="placa_visualizar_seguros" readonly></textarea> 
+        </hgroup>
+
+        <hgroup>
+            <label  id="tipo_formulario">Seguradora:</label>
+            <textarea name="seguradora_visualizar_seguros" readonly></textarea>    
+        </hgroup>
+
+        <hgroup>
+            <label  id="tipo_formulario">Data de contratação:</label>
+            <textarea name="dt_cont_visualizar_seguros" readonly></textarea>
+              
+        </hgroup>
+
+        <hgroup>
+            <label  id="tipo_formulario">Data de vencimento:</label>
+            <textarea name="dt_venc_visualizar_seguros" readonly></textarea> 
+        </hgroup>
+
+        <hgroup>
+            <label  id="tipo_formulario">Forma de pagamento:</label>
+            <textarea name="pagamento_visualizar_seguros" readonly></textarea>    
+        </hgroup>
+
+        <hgroup>
+            <label  id="tipo_formulario">Apólice:</label>
+            <textarea name="apolice_visualizar_seguros" readonly></textarea>    
+        </hgroup>
+
+        <div id="bt_vt">
+            <a href="atualizar_cadastro_seguros.html">
+                <label id="botao1">Alterar</label>
+            </a>
+            <label id="botao1" onclick="excluirSeguros()"> Excluir </label>
+            <script>
+                function excluirSeguros(){
+                var resultado = confirm("Deseja excluir esse seguro?");
+                    if (resultado == true) {
+                        alert("O seguro será excluído do registro!");    
+                    } 
+                }
+            </script>
+            <a href="consultar_seguros2.html">
+                <img id="voltar2" src= "..\static\imagem\circle-arrow-right050.png" alt="Voltar"/>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
